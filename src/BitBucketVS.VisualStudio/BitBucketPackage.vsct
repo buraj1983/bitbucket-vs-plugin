@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <!-- Adds a reference to the KnownMonikers in the ImageCatalog for use in the <button> elements -->
+  <Include href="KnownImageIds.vsct"/>
+
+  <Commands package="guidBitBucketPackage">
+    <Groups>
+      <Group guid="guidBitbucketCmdSet" id="bitbucketMenuGroup" priority="0x0600">
+        <Parent guid="guidManageConnections" id="idManageConnections" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidBitbucketCmdSet" id="addConnectionCommand" type="Button">
+        <Icon guid="ImageCatalogGuid" id="ButtonClick" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Connect To Bitbucket</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <CommandPlacements>
+    <!-- Add Connection (Team Explorer) command -->
+    <CommandPlacement guid="guidBitbucketCmdSet" id="addConnectionCommand" priority="0x0100">
+      <Parent guid="guidBitbucketCmdSet" id="bitbucketMenuGroup"/>
+    </CommandPlacement>
+  </CommandPlacements>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidBitBucketPackage" value="{85f76143-75ef-411e-8d7b-087613f5ecee}" />
+
+    <GuidSymbol name="guidBitbucketCmdSet" value="{584AAC45-E76F-45D2-B121-D9706CBA3210}">
+      <IDSymbol name="bitbucketMenuGroup" value="0x1020"/>
+      <IDSymbol name="addConnectionCommand" value="0x0100"/>
+    </GuidSymbol>
+
+    <!-- This is the Manage Connections menu -->
+    <GuidSymbol name="guidManageConnections" value="{0A014553-A0AA-46DD-8D6B-B8E3178CA435}">
+      <IDSymbol name="idManageConnections" value="0x1009"/>
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketVS.VisualStudio", "src\\BitBucketVS.VisualStudio\BitBucketVS.VisualStudio.csproj", "{B15E1A40-DBFF-4460-B323-D3B484CF7F28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketVS.VisualStudio", "src\BitBucketVS.VisualStudio\BitBucketVS.VisualStudio.csproj", "{B15E1A40-DBFF-4460-B323-D3B484CF7F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketVS.Common", "src\BitBucketVS.Common\BitBucketVS.Common.csproj", "{81574CA0-6231-4166-B98F-05C3CAB24099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B15E1A40-DBFF-4460-B323-D3B484CF7F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15E1A40-DBFF-4460-B323-D3B484CF7F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15E1A40-DBFF-4460-B323-D3B484CF7F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81574CA0-6231-4166-B98F-05C3CAB24099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81574CA0-6231-4166-B98F-05C3CAB24099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81574CA0-6231-4166-B98F-05C3CAB24099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81574CA0-6231-4166-B98F-05C3CAB24099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
